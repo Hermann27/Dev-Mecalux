@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C17B44DE-9DB0-472A-8CD1-287EE73B482D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Mecalux_Application.My.MyApplication</StartupObject>
+    <RootNamespace>Mecalux_Application</RootNamespace>
+    <AssemblyName>Mecalux Application</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Mecalux Application.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Mecalux Application.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikData, Version=2013.3.1016.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connect.vb" />
+    <Compile Include="Frm_FluxEntrantCritére.designer.vb">
+      <DependentUpon>Frm_FluxEntrantCritére.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FluxEntrantCritére.vb">
+    </Compile>
+    <Compile Include="Frm_FluxEntrant.designer.vb">
+      <DependentUpon>Frm_FluxEntrant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FluxEntrant.vb">
+    </Compile>
+    <Compile Include="FrmExtractionBCClient.Designer.vb">
+      <DependentUpon>FrmExtractionBCClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionBCClient.vb">
+    </Compile>
+    <Compile Include="FrmExtractionClient.Designer.vb">
+      <DependentUpon>FrmExtractionClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionClient.vb">
+    </Compile>
+    <Compile Include="FrmExtractionFournisseurs.Designer.vb">
+      <DependentUpon>FrmExtractionFournisseurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionFournisseurs.vb">
+    </Compile>
+    <Compile Include="FichierJournal.designer.vb">
+      <DependentUpon>FichierJournal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FichierJournal.vb">
+    </Compile>
+    <Compile Include="FrmAllCorrespondance.Designer.vb">
+      <DependentUpon>FrmAllCorrespondance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAllCorrespondance.vb">
+    </Compile>
+    <Compile Include="FichierConfiguration.designer.vb">
+      <DependentUpon>FichierConfiguration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FichierConfiguration.vb">
+    </Compile>
+    <Compile Include="FrmChoix.Designer.vb">
+      <DependentUpon>FrmChoix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChoix.vb">
+    </Compile>
+    <Compile Include="FrmCorrespondance.Designer.vb">
+      <DependentUpon>FrmCorrespondance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCorrespondance.vb">
+    </Compile>
+    <Compile Include="FrmExtraction.Designer.vb">
+      <DependentUpon>FrmExtraction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtraction.vb">
+    </Compile>
+    <Compile Include="Frm_EtatDeConexion.designer.vb">
+      <DependentUpon>Frm_EtatDeConexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_EtatDeConexion.vb">
+    </Compile>
+    <Compile Include="MenuApplication1.designer.vb">
+      <DependentUpon>MenuApplication1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuApplication1.vb">
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParametreSocieteConsoleWaza.designer.vb">
+      <DependentUpon>ParametreSocieteConsoleWaza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParametreSocieteConsoleWaza.vb">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frm_FluxEntrantCritére.resx">
+      <DependentUpon>Frm_FluxEntrantCritére.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FluxEntrant.resx">
+      <DependentUpon>Frm_FluxEntrant.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionBCClient.resx">
+      <DependentUpon>FrmExtractionBCClient.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionClient.resx">
+      <DependentUpon>FrmExtractionClient.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionFournisseurs.resx">
+      <DependentUpon>FrmExtractionFournisseurs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FichierJournal.resx">
+      <DependentUpon>FichierJournal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAllCorrespondance.resx">
+      <DependentUpon>FrmAllCorrespondance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FichierConfiguration.resx">
+      <DependentUpon>FichierConfiguration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChoix.resx">
+      <DependentUpon>FrmChoix.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCorrespondance.resx">
+      <DependentUpon>FrmCorrespondance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtraction.resx">
+      <DependentUpon>FrmExtraction.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EtatDeConexion.resx">
+      <DependentUpon>Frm_EtatDeConexion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuApplication1.resx">
+      <DependentUpon>MenuApplication1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParametreSocieteConsoleWaza.resx">
+      <DependentUpon>ParametreSocieteConsoleWaza.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1.JPG" />
+    <Content Include="Resources\2.JPG" />
+    <Content Include="Resources\4.JPG" />
+    <None Include="Resources\44.gif" />
+    <Content Include="Resources\5.JPG" />
+    <Content Include="Resources\6.JPG" />
+    <Content Include="Resources\7.JPG" />
+    <Content Include="Resources\7trio.JPG" />
+    <Content Include="Resources\add_16.bmp" />
+    <Content Include="Resources\add_16.gif" />
+    <Content Include="Resources\agt_action_success.png" />
+    <Content Include="Resources\AnalyzeWizard.gif" />
+    <Content Include="Resources\arrowforward_16.bmp" />
+    <None Include="Resources\Backup and Restore.png" />
+    <Content Include="Resources\banner_default.jpg" />
+    <Content Include="Resources\banner_module_waza1222507595.jpg" />
+    <Content Include="Resources\Bannière 1.jpg" />
+    <Content Include="Resources\Bannière 2.jpg" />
+    <Content Include="Resources\Bannière 21.jpg" />
+    <Content Include="Resources\billetage.png" />
+    <Content Include="Resources\Bouton Connecter.jpg" />
+    <Content Include="Resources\Bouton Connecter1.jpg" />
+    <Content Include="Resources\Bouton Fermer.jpg" />
+    <Content Include="Resources\btAjouter22.png" />
+    <Content Include="Resources\btEnregistrer22.png" />
+    <None Include="Resources\btFermer22.png" />
+    <Content Include="Resources\btFlecheHaut32.png" />
+    <None Include="Resources\btModifier22.png" />
+    <Content Include="Resources\btn_valider.gif" />
+    <None Include="Resources\btn_valider1.gif" />
+    <Content Include="Resources\btRepertoireB22.png" />
+    <None Include="Resources\btRepertoireB221.png" />
+    <Content Include="Resources\btRepertoireB32.png" />
+    <Content Include="Resources\btRetour22.png" />
+    <Content Include="Resources\btSupprimer22.png" />
+    <None Include="Resources\btSupprimer221.png" />
+    <Content Include="Resources\Capturee.JPG" />
+    <None Include="Resources\Checked.png" />
+    <Content Include="Resources\Community Help.png" />
+    <Content Include="Resources\Copy of xfce-system-lock.png" />
+    <Content Include="Resources\create.gif" />
+    <None Include="Resources\create1.gif" />
+    <Content Include="Resources\Creer1.bmp" />
+    <Content Include="Resources\criticalind_status.gif" />
+    <None Include="Resources\criticalind_status1.gif" />
+    <Content Include="Resources\display.png" />
+    <Content Include="Resources\ecrire.JPG" />
+    <Content Include="Resources\ExEtranger_frm.BackgroundImage1.png" />
+    <None Include="Resources\ExEtranger_frm.BackgroundImage11.png" />
+    <Content Include="Resources\export.gif" />
+    <None Include="Resources\export1.gif" />
+    <Content Include="Resources\exportcsv1.bmp" />
+    <Content Include="Resources\export_over.gif" />
+    <Content Include="Resources\fichiers ini.png" />
+    <None Include="Resources\foldeopen_16.ico" />
+    <None Include="Resources\fleche-gauche.png" />
+    <None Include="Resources\fleche gauche.png" />
+    <Content Include="Resources\forms.gif" />
+    <None Include="Resources\forms1.gif" />
+    <None Include="Resources\gauche.png" />
+    <Content Include="Resources\icon-loading-animated.gif" />
+    <Content Include="Resources\image019.gif" />
+    <Content Include="Resources\image020.gif" />
+    <Content Include="Resources\image0201.gif" />
+    <Content Include="Resources\image033.gif" />
+    <Content Include="Resources\image034.gif" />
+    <Content Include="Resources\image1.gif" />
+    <None Include="Resources\Image2.Image.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\images %281%29.jpg" />
+    <Content Include="Resources\infobuild.JPG" />
+    <Content Include="Resources\insert.gif" />
+    <Content Include="Resources\kworldclock1.png" />
+    <Content Include="Resources\lilo.JPG" />
+    <None Include="Resources\loading37.gif" />
+    <Content Include="Resources\logo_waza.gif" />
+    <Content Include="Resources\loupe.gif" />
+    <Content Include="Resources\loupe_1.png" />
+    <Content Include="Resources\menu.JPG" />
+    <Content Include="Resources\newSp.gif" />
+    <None Include="Resources\newSp1.gif" />
+    <Content Include="Resources\NoVehicule.jpg" />
+    <Content Include="Resources\Papier peint Waza.bmp" />
+    <Content Include="Resources\quitter.png" />
+    <Content Include="Resources\quitter1.png" />
+    <Content Include="Resources\sortie.gif" />
+    <Content Include="Resources\suppression.JPG" />
+    <Content Include="Resources\tServer.gif" />
+    <None Include="Resources\type.png" />
+    <Content Include="Resources\user.gif" />
+    <Content Include="Resources\voir.JPG" />
+    <Content Include="Resources\votre_solution_sage copy.jpg" />
+    <Content Include="Resources\votre_solution_sage copy1.jpg" />
+    <Content Include="Resources\votre_solution_sage.jpg" />
+    <Content Include="Resources\Waza Solutions - Fond d%27écran blanc filigrané.jpg" />
+    <Content Include="Resources\WazaSolutions.bmp" />
+    <Content Include="Resources\Waza_Box.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

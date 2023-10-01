@@ -1,0 +1,76 @@
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.exe
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.pdb
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.xml
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Resources.resources
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.vbproj.GenerateResource.Cache
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.exe
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.xml
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.pdb
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.MenuApplication1.resources
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_FichierConfiguration.resources
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmCorrespondance.resources
+C:\Users\Herman\Desktop\Generator\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmAllCorrespondance.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.exe
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.xml
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.pdb
+I:\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.exe
+I:\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.pdb
+I:\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.xml
+I:\Mecalux\Mecalux Application\obj\Debug\ResolveAssemblyReference.cache
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtractionClient.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtractionFournisseurs.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FichierJournal.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmAllCorrespondance.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_FichierConfiguration.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmChoix.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmCorrespondance.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtraction.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_EtatDeConexion.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.MenuApplication1.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Resources.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.ParametreSocieteConsoleWaza.resources
+I:\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.vbproj.GenerateResource.Cache
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.exe
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.xml
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.pdb
+E:\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.exe
+E:\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.pdb
+E:\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.xml
+E:\Mecalux\Mecalux Application\obj\Debug\ResolveAssemblyReference.cache
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtractionClient.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtractionFournisseurs.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FichierJournal.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmAllCorrespondance.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_FichierConfiguration.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmChoix.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmCorrespondance.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtraction.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_EtatDeConexion.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.MenuApplication1.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Resources.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.ParametreSocieteConsoleWaza.resources
+E:\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.vbproj.GenerateResource.Cache
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.exe
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.pdb
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\bin\Debug\Mecalux Application.xml
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtractionBCClient.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtractionClient.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtractionFournisseurs.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FichierJournal.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmAllCorrespondance.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_FichierConfiguration.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmChoix.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmCorrespondance.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.FrmExtraction.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_EtatDeConexion.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.MenuApplication1.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Resources.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.ParametreSocieteConsoleWaza.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.vbproj.GenerateResource.Cache
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.exe
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.xml
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux Application.pdb
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_FluxEntrant.resources
+C:\Users\Herman\Desktop\Mecalux\Mecalux Application\obj\Debug\Mecalux_Application.Frm_FluxEntrantCritére.resources

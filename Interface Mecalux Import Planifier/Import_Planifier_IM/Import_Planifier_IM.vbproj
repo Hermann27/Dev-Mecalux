@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FA41534-0694-44A8-98B0-55BF87AFD57D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Import_Planifier_IM.My.MyApplication</StartupObject>
+    <RootNamespace>Import_Planifier_IM</RootNamespace>
+    <AssemblyName>Import_Planifier_IM</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>waza icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Import_Planifier_IM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Import_Planifier_IM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AFormatStock.designer.vb">
+      <DependentUpon>AFormatStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AFormatStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFormatTransfert.designer.vb">
+      <DependentUpon>AFormatTransfert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AFormatTransfert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterUnFormatMvt.designer.vb">
+      <DependentUpon>AjouterUnFormatMvt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterUnFormatMvt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Connect.vb" />
+    <Compile Include="encours.designer.vb">
+      <DependentUpon>encours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="encours.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FichierJournal.Designer.vb">
+      <DependentUpon>FichierJournal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FichierJournal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatDintegrationMvt.designer.vb">
+      <DependentUpon>FormatDintegrationMvt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormatDintegrationMvt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatintegrationStock.designer.vb">
+      <DependentUpon>FormatintegrationStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormatintegrationStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatintegrationTransfert.designer.vb">
+      <DependentUpon>FormatintegrationTransfert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormatintegrationTransfert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVersionng.Designer.vb">
+      <DependentUpon>FormVersionng.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormVersionng.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAllCorrespondance.Designer.vb">
+      <DependentUpon>FrmAllCorrespondance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAllCorrespondance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChargement.designer.vb">
+      <DependentUpon>frmChargement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChargement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChoix.designer.vb">
+      <DependentUpon>FrmChoix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChoix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChoixTraitement.Designer.vb">
+      <DependentUpon>FrmChoixTraitement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChoixTraitement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCorrespondance.Designer.vb">
+      <DependentUpon>FrmCorrespondance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCorrespondance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExtractionBCClient.Designer.vb">
+      <DependentUpon>FrmExtractionBCClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionBCClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExtractionBCFournisseur.Designer.vb">
+      <DependentUpon>FrmExtractionBCFournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionBCFournisseur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExtractionClient.Designer.vb">
+      <DependentUpon>FrmExtractionClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExtractionFournisseurs.Designer.vb">
+      <DependentUpon>FrmExtractionFournisseurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionFournisseurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExtractionPseudo.Designer.vb">
+      <DependentUpon>FrmExtractionPseudo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionPseudo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExtractionvb.Designer.vb">
+      <DependentUpon>FrmExtractionvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtractionvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConfirmationReception.Designer.vb">
+      <DependentUpon>Frm_ConfirmationReception.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConfirmationReception.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CorArticle.designer.vb">
+      <DependentUpon>Frm_CorArticle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CorArticle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EtatDeConexion.Designer.vb">
+      <DependentUpon>Frm_EtatDeConexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_EtatDeConexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FichierConfiguration.Designer.vb">
+      <DependentUpon>Frm_FichierConfiguration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FichierConfiguration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FluxEntrantCritére.Designer.vb">
+      <DependentUpon>Frm_FluxEntrantCritére.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FluxEntrantCritére.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MvtE_S.Designer.vb">
+      <DependentUpon>Frm_MvtE_S.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MvtE_S.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OptionGrid.designer.vb">
+      <DependentUpon>Frm_OptionGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OptionGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TemplateALLCorrespondance.Designer.vb">
+      <DependentUpon>Frm_TemplateALLCorrespondance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TemplateALLCorrespondance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ToPosting.designer.vb">
+      <DependentUpon>Frm_ToPosting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ToPosting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr_ImportationMvtAchat.designer.vb">
+      <DependentUpon>Fr_ImportationMvtAchat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fr_ImportationMvtAchat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr_ImportationMvtVente.designer.vb">
+      <DependentUpon>Fr_ImportationMvtVente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fr_ImportationMvtVente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr_ImportationStock.designer.vb">
+      <DependentUpon>Fr_ImportationStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fr_ImportationStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr_ImportationTransfert.designer.vb">
+      <DependentUpon>Fr_ImportationTransfert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fr_ImportationTransfert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoLibreCommercial.designer.vb">
+      <DependentUpon>InfoLibreCommercial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoLibreCommercial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoLibreStock.designer.vb">
+      <DependentUpon>InfoLibreStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoLibreStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoLibreTransfert.designer.vb">
+      <DependentUpon>InfoLibreTransfert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoLibreTransfert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectureXml.designer.vb">
+      <DependentUpon>LectureXml.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LectureXml.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.vb">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParametreSocieteConsoleWaza.Designer.vb">
+      <DependentUpon>ParametreSocieteConsoleWaza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParametreSocieteConsoleWaza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametre_Piece_Commerciale.designer.vb">
+      <DependentUpon>Parametre_Piece_Commerciale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parametre_Piece_Commerciale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planification.designer.vb">
+      <DependentUpon>Planification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanificationDate.designer.vb">
+      <DependentUpon>PlanificationDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlanificationDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanificationHeure.designer.vb">
+      <DependentUpon>PlanificationHeure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlanificationHeure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanificationSpecial.designer.vb">
+      <DependentUpon>PlanificationSpecial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlanificationSpecial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanificationTache.designer.vb">
+      <DependentUpon>PlanificationTache.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlanificationTache.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanificationTraitement.designer.vb">
+      <DependentUpon>PlanificationTraitement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlanificationTraitement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercheCriteredocument.designer.vb">
+      <DependentUpon>RechercheCriteredocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheCriteredocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schematextractiondocument.designer.vb">
+      <DependentUpon>Schematextractiondocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Schematextractiondocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematextractionEcriture.designer.vb">
+      <DependentUpon>SchematextractionEcriture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematextractionEcriture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematextractionTiers.designer.vb">
+      <DependentUpon>SchematextractionTiers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematextractionTiers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematintegrerCA.designer.vb">
+      <DependentUpon>SchematintegrerCA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerCA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematintegrerEcriture.designer.vb">
+      <DependentUpon>SchematintegrerEcriture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerEcriture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematintegrerMvt.designer.vb">
+      <DependentUpon>SchematintegrerMvt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerMvt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematintegrerStock.designer.vb">
+      <DependentUpon>SchematintegrerStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematintegrerTiers.designer.vb">
+      <DependentUpon>SchematintegrerTiers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerTiers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematintegrerTransfert.designer.vb">
+      <DependentUpon>SchematintegrerTransfert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerTransfert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionFiltre.designer.vb">
+      <DependentUpon>SelectionFiltre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionFiltre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionFormatCompteA.designer.vb">
+      <DependentUpon>SelectionFormatCompteA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionFormatCompteA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionFormatEcriture.designer.vb">
+      <DependentUpon>SelectionFormatEcriture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionFormatEcriture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionFormatMvt.designer.vb">
+      <DependentUpon>SelectionFormatMvt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionFormatMvt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionFormatStock.designer.vb">
+      <DependentUpon>SelectionFormatStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionFormatStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionFormatTiers.designer.vb">
+      <DependentUpon>SelectionFormatTiers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionFormatTiers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionFormatTransfert.designer.vb">
+      <DependentUpon>SelectionFormatTransfert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionFormatTransfert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transcodage.designer.vb">
+      <DependentUpon>Transcodage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transcodage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AFormatStock.resx">
+      <DependentUpon>AFormatStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFormatTransfert.resx">
+      <DependentUpon>AFormatTransfert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterUnFormatMvt.resx">
+      <DependentUpon>AjouterUnFormatMvt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="encours.resx">
+      <DependentUpon>encours.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FichierJournal.resx">
+      <DependentUpon>FichierJournal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatDintegrationMvt.resx">
+      <DependentUpon>FormatDintegrationMvt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatintegrationStock.resx">
+      <DependentUpon>FormatintegrationStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatintegrationTransfert.resx">
+      <DependentUpon>FormatintegrationTransfert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVersionng.resx">
+      <DependentUpon>FormVersionng.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAllCorrespondance.resx">
+      <DependentUpon>FrmAllCorrespondance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChargement.resx">
+      <DependentUpon>frmChargement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChoix.resx">
+      <DependentUpon>FrmChoix.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChoixTraitement.resx">
+      <DependentUpon>FrmChoixTraitement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCorrespondance.resx">
+      <DependentUpon>FrmCorrespondance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionBCClient.resx">
+      <DependentUpon>FrmExtractionBCClient.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionBCFournisseur.resx">
+      <DependentUpon>FrmExtractionBCFournisseur.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionClient.resx">
+      <DependentUpon>FrmExtractionClient.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionFournisseurs.resx">
+      <DependentUpon>FrmExtractionFournisseurs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionPseudo.resx">
+      <DependentUpon>FrmExtractionPseudo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtractionvb.resx">
+      <DependentUpon>FrmExtractionvb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConfirmationReception.resx">
+      <DependentUpon>Frm_ConfirmationReception.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CorArticle.resx">
+      <DependentUpon>Frm_CorArticle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EtatDeConexion.resx">
+      <DependentUpon>Frm_EtatDeConexion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FichierConfiguration.resx">
+      <DependentUpon>Frm_FichierConfiguration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FluxEntrantCritére.resx">
+      <DependentUpon>Frm_FluxEntrantCritére.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MvtE_S.resx">
+      <DependentUpon>Frm_MvtE_S.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OptionGrid.resx">
+      <DependentUpon>Frm_OptionGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TemplateALLCorrespondance.resx">
+      <DependentUpon>Frm_TemplateALLCorrespondance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ToPosting.resx">
+      <DependentUpon>Frm_ToPosting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr_ImportationMvtAchat.resx">
+      <DependentUpon>Fr_ImportationMvtAchat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr_ImportationMvtVente.resx">
+      <DependentUpon>Fr_ImportationMvtVente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr_ImportationStock.resx">
+      <DependentUpon>Fr_ImportationStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr_ImportationTransfert.resx">
+      <DependentUpon>Fr_ImportationTransfert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoLibreCommercial.resx">
+      <DependentUpon>InfoLibreCommercial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoLibreStock.resx">
+      <DependentUpon>InfoLibreStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoLibreTransfert.resx">
+      <DependentUpon>InfoLibreTransfert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectureXml.resx">
+      <DependentUpon>LectureXml.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParametreSocieteConsoleWaza.resx">
+      <DependentUpon>ParametreSocieteConsoleWaza.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametre_Piece_Commerciale.resx">
+      <DependentUpon>Parametre_Piece_Commerciale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planification.resx">
+      <DependentUpon>Planification.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanificationDate.resx">
+      <DependentUpon>PlanificationDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanificationHeure.resx">
+      <DependentUpon>PlanificationHeure.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanificationSpecial.resx">
+      <DependentUpon>PlanificationSpecial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanificationTache.resx">
+      <DependentUpon>PlanificationTache.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanificationTraitement.resx">
+      <DependentUpon>PlanificationTraitement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheCriteredocument.resx">
+      <DependentUpon>RechercheCriteredocument.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schematextractiondocument.resx">
+      <DependentUpon>Schematextractiondocument.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematextractionEcriture.resx">
+      <DependentUpon>SchematextractionEcriture.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematextractionTiers.resx">
+      <DependentUpon>SchematextractionTiers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematintegrerCA.resx">
+      <DependentUpon>SchematintegrerCA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematintegrerEcriture.resx">
+      <DependentUpon>SchematintegrerEcriture.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematintegrerMvt.resx">
+      <DependentUpon>SchematintegrerMvt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematintegrerStock.resx">
+      <DependentUpon>SchematintegrerStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematintegrerTiers.resx">
+      <DependentUpon>SchematintegrerTiers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematintegrerTransfert.resx">
+      <DependentUpon>SchematintegrerTransfert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionFiltre.resx">
+      <DependentUpon>SelectionFiltre.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionFormatCompteA.resx">
+      <DependentUpon>SelectionFormatCompteA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionFormatEcriture.resx">
+      <DependentUpon>SelectionFormatEcriture.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionFormatMvt.resx">
+      <DependentUpon>SelectionFormatMvt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionFormatStock.resx">
+      <DependentUpon>SelectionFormatStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionFormatTiers.resx">
+      <DependentUpon>SelectionFormatTiers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionFormatTransfert.resx">
+      <DependentUpon>SelectionFormatTransfert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transcodage.resx">
+      <DependentUpon>Transcodage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1.JPG" />
+    <Content Include="Resources\2.JPG" />
+    <Content Include="Resources\4.JPG" />
+    <Content Include="Resources\44.gif" />
+    <Content Include="Resources\5.JPG" />
+    <Content Include="Resources\58.png" />
+    <Content Include="Resources\6.JPG" />
+    <Content Include="Resources\7.JPG" />
+    <Content Include="Resources\7trio.JPG" />
+    <Content Include="Resources\accepter.png" />
+    <Content Include="Resources\add_16.bmp" />
+    <Content Include="Resources\add_16.gif" />
+    <Content Include="Resources\add_161.gif" />
+    <Content Include="Resources\agt_action_success.png" />
+    <Content Include="Resources\AnalyzeWizard.gif" />
+    <Content Include="Resources\AnalyzeWizard1.gif" />
+    <None Include="Resources\applications_161.ico" />
+    <None Include="Resources\arrowback_16.ico" />
+    <None Include="Resources\arrowdown_16.ico" />
+    <None Include="Resources\AnalyzeWizard2.gif" />
+    <None Include="Resources\AnalyzeWizard11.gif" />
+    <Content Include="Resources\arrowforward_16.bmp" />
+    <None Include="Resources\arrowforward_16.ico" />
+    <Content Include="Resources\arrowforward_161.bmp" />
+    <None Include="Resources\arrowforward_1611.bmp" />
+    <None Include="Resources\arrowup_16.ico" />
+    <None Include="Resources\arrowforward_162.bmp" />
+    <Content Include="Resources\Backup and Restore.png" />
+    <Content Include="Resources\banner_default.jpg" />
+    <Content Include="Resources\banner_module_waza1222507595.jpg" />
+    <Content Include="Resources\Bannière 1.jpg" />
+    <Content Include="Resources\Bannière 2.jpg" />
+    <Content Include="Resources\Bannière 21.jpg" />
+    <Content Include="Resources\billetage.png" />
+    <Content Include="Resources\Bouton Connecter.jpg" />
+    <Content Include="Resources\Bouton Connecter1.jpg" />
+    <Content Include="Resources\Bouton Fermer.jpg" />
+    <Content Include="Resources\btAjouter22.png" />
+    <Content Include="Resources\btEnregistrer22.png" />
+    <Content Include="Resources\btFermer22.png" />
+    <None Include="Resources\btFermer221.png" />
+    <None Include="Resources\btFermer222.png" />
+    <Content Include="Resources\btFlecheHaut32.png" />
+    <Content Include="Resources\btModifier22.png" />
+    <Content Include="Resources\btn_valider.gif" />
+    <Content Include="Resources\btn_valider1.gif" />
+    <Content Include="Resources\btRepertoireB22.png" />
+    <Content Include="Resources\btRepertoireB221.png" />
+    <None Include="Resources\btRepertoireB222.png" />
+    <None Include="Resources\btRepertoireB223.png" />
+    <Content Include="Resources\btRepertoireB32.png" />
+    <Content Include="Resources\btRetour22.png" />
+    <Content Include="Resources\btSupprimer22.png" />
+    <Content Include="Resources\btSupprimer221.png" />
+    <Content Include="Resources\Capturee.JPG" />
+    <Content Include="Resources\Checked.png" />
+    <Content Include="Resources\Community Help.png" />
+    <Content Include="Resources\Copy of xfce-system-lock.png" />
+    <Content Include="Resources\create.gif" />
+    <Content Include="Resources\create1.gif" />
+    <Content Include="Resources\create2.gif" />
+    <Content Include="Resources\Creer1.bmp" />
+    <Content Include="Resources\criticalind_status.gif" />
+    <Content Include="Resources\criticalind_status1.gif" />
+    <Content Include="Resources\criticalind_status2.gif" />
+    <None Include="Resources\delete_161.ico" />
+    <Content Include="Resources\display.png" />
+    <None Include="Resources\documents_16.ico" />
+    <Content Include="Resources\ecrire.JPG" />
+    <Content Include="Resources\error.png" />
+    <Content Include="Resources\ExEtranger_frm.BackgroundImage1.png" />
+    <Content Include="Resources\ExEtranger_frm.BackgroundImage11.png" />
+    <Content Include="Resources\exlamation.png" />
+    <Content Include="Resources\export.gif" />
+    <Content Include="Resources\export1.gif" />
+    <None Include="Resources\export11.gif" />
+    <None Include="Resources\export12.gif" />
+    <Content Include="Resources\exportcsv1.bmp" />
+    <None Include="Resources\exportcsv11.bmp" />
+    <Content Include="Resources\export_over.gif" />
+    <Content Include="Resources\fichiers ini.png" />
+    <Content Include="Resources\fleche gauche.png" />
+    <Content Include="Resources\fleche-gauche.png" />
+    <Content Include="Resources\fleche.png" />
+    <None Include="Resources\foldeopen_16.ico" />
+    <None Include="Resources\foldeopen_161.ico" />
+    <Content Include="Resources\forms.gif" />
+    <Content Include="Resources\forms1.gif" />
+    <Content Include="Resources\gauche.png" />
+    <Content Include="Resources\icon-loading-animated.gif" />
+    <Content Include="Resources\image019.gif" />
+    <Content Include="Resources\image020.gif" />
+    <Content Include="Resources\image0201.gif" />
+    <None Include="Resources\image0202.gif" />
+    <Content Include="Resources\image033.gif" />
+    <None Include="Resources\image0331.gif" />
+    <Content Include="Resources\image034.gif" />
+    <None Include="Resources\image0341.gif" />
+    <Content Include="Resources\image1.gif" />
+    <None Include="Resources\image11.gif" />
+    <Content Include="Resources\Image2.Image.png" />
+    <None Include="Resources\Image2.Image1.png" />
+    <None Include="Resources\Image2_Image.png" />
+    <None Include="Resources\Image2_Image1.png" />
+    <Content Include="Resources\images %281%29.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <None Include="Resources\images_5.gif" />
+    <None Include="Resources\Image_5_.ico" />
+    <Content Include="Resources\infobuild.JPG" />
+    <Content Include="Resources\insert.gif" />
+    <Content Include="Resources\k1.png" />
+    <None Include="Resources\k11.png" />
+    <Content Include="Resources\k2.png" />
+    <Content Include="Resources\kworldclock1.png" />
+    <Content Include="Resources\lilo.JPG" />
+    <Content Include="Resources\loading37.gif" />
+    <Content Include="Resources\logo_waza.gif" />
+    <Content Include="Resources\loupe.gif" />
+    <Content Include="Resources\loupe_1.png" />
+    <Content Include="Resources\menu.JPG" />
+    <Content Include="Resources\newSp.gif" />
+    <Content Include="Resources\newSp1.gif" />
+    <Content Include="Resources\NoVehicule.jpg" />
+    <Content Include="Resources\Papier peint Waza.bmp" />
+    <Content Include="Resources\quitter.png" />
+    <Content Include="Resources\quitter1.png" />
+    <None Include="Resources\save_16.ico" />
+    <None Include="Resources\save_161.ico" />
+    <Content Include="Resources\sortie.gif" />
+    <Content Include="Resources\suppression.JPG" />
+    <Content Include="Resources\tServer.gif" />
+    <Content Include="Resources\type.png" />
+    <Content Include="Resources\user.gif" />
+    <Content Include="Resources\voir.JPG" />
+    <Content Include="Resources\votre_solution_sage copy.jpg" />
+    <Content Include="Resources\votre_solution_sage copy1.jpg" />
+    <Content Include="Resources\votre_solution_sage.jpg" />
+    <Content Include="Resources\Waza Solutions - Fond d%27écran blanc filigrané.jpg" />
+    <Content Include="Resources\WazaSolutions.bmp" />
+    <Content Include="Resources\Waza_Box.jpg" />
+    <Content Include="waza icone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Objets100Lib">
+      <Guid>{EBE49B80-2CEA-499E-AAB4-F9D88369EAA6}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>10</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
